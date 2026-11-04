@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "scheme": "w4a16-gptq",
+  "wikitext2_ppl": 18.181,
+  "size_mb": 435.8,
+  "quant_seconds": 11134.9,
+  "eval_tokens": 20480,
+  "sample": "The key idea behind quantizing a neural network is to reduce the number of parameters (weights) in the network. This is achieved by using a technique called \"weight sharing\" or \"weight sharing\" in the context of neural networks. In this problem",
+  "torch": "2.14.1"
+}

@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "scheme": "baseline",
+  "wikitext2_ppl": 16.519,
+  "size_mb": 942.3,
+  "quant_seconds": 0.0,
+  "eval_tokens": 20480,
+  "sample": "The key idea behind quantizing a neural network is to reduce the number of parameters in the network. This is done by introducing a new layer of neurons that can be trained independently of the rest of the network. The new layer is called a \"quant",
+  "torch": "2.14.1"
+}

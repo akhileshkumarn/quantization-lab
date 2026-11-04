@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "scheme": "w4a16-rtn",
+  "wikitext2_ppl": 21.719,
+  "size_mb": 435.8,
+  "quant_seconds": 3.1,
+  "eval_tokens": 20480,
+  "sample": "The key idea behind quantizing a neural network is to reduce the number of parameters in the network. This is because reducing the number of parameters reduces the amount of data that needs to be fed to the network. This, in turn, reduces the amount",
+  "torch": "2.14.1"
+}
