@@ -27,7 +27,9 @@ Cross-check: the saved checkpoints, reloaded from disk in bf16, give 21.718 (w4a
   `oneshot` (compressed-tensors bug, reported as
   [vllm-project/compressed-tensors#985](https://github.com/vllm-project/compressed-tensors/issues/985)). Pre-fix results are kept in
   `results/pre-fix/` (w4a16-rtn 16.52 = baseline; w8a8-rtn 16.98 = activation quant only).
-- Runs use compressed-tensors with the fix (branch `fix-offloaded-weight-qdq`, editable install).
+- Runs use compressed-tensors with the fix (branch `fix-offloaded-weight-qdq`, editable install), now proposed in
+  [PR #1001](https://github.com/vllm-project/compressed-tensors/pull/1001), which is under review. The branch has since
+  been rebased onto newer upstream code, and these numbers have not been re-run on that newer base.
 - Earlier sizes were inflated (701/862 MiB) because unquantized tensors were saved in fp32; `quantize.py` now casts
   them to bf16 after saving. The GPTQ checkpoint was converted in place, not re-run (the fp32 copy is kept
   locally, not in this repo).

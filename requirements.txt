@@ -11,6 +11,7 @@ numpy==2.5.4
 # llm-compressor was installed from source at this upstream commit.
 llmcompressor @ git+https://github.com/vllm-project/llm-compressor@fd0a20c4e3aa5a96dafb95b7d2d9c0ca16910f34
 
-# compressed-tensors with the fix for vllm-project/compressed-tensors#985 (not yet released).
+# compressed-tensors with the fix for vllm-project/compressed-tensors#985
+# (proposed in vllm-project/compressed-tensors#1001, not merged or released yet).
 # Without it, W4A16-RTN silently gives the bf16 baseline perplexity.
 compressed-tensors @ git+https://github.com/akhileshkumarn/compressed-tensors@fix-offloaded-weight-qdq
